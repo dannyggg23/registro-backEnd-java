@@ -1,0 +1,717 @@
+{
+	"info": {
+		"_postman_id": "f16dd1a8-7d76-4da6-b367-5e353a408786",
+		"name": "OpenAPI definition",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20934603"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "clientess",
+					"item": [
+						{
+							"name": "get All Clientess",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8080/api/clientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"clientes"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/clientess",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"clientess"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"correctProcess\": true,\n  \"message\": \"eiusmod velit\",\n  \"data\": {}\n}"
+								},
+								{
+									"name": "Internal Server Error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/clientess",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"clientess"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/clientess",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"clientess"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "saveClient",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"nombreCli\": \"danny\",\n  \"correoCli\": \"dannyggg23@gmail.com\",\n  \"grupoCli\": \"SK\",\n  \"numeroCli\": \"\"\n  \n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/clientes/saveClient",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"clientes",
+										"saveClient"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"correoCli\": \"tempor\",\n  \"grupoCli\": \"inc\",\n  \"nombreCli\": \"ut irure exercitation\",\n  \"idCli\": -15947896,\n  \"numeroCli\": \"off\",\n  \"idBen\": -1631753\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/clientess/saveClient",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"clientess",
+												"saveClient"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"correctProcess\": true,\n  \"message\": \"eiusmod velit\",\n  \"data\": {}\n}"
+								},
+								{
+									"name": "Internal Server Error",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"correoCli\": \"tempor\",\n  \"grupoCli\": \"inc\",\n  \"nombreCli\": \"ut irure exercitation\",\n  \"idCli\": -15947896,\n  \"numeroCli\": \"off\",\n  \"idBen\": -1631753\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/clientess/saveClient",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"clientess",
+												"saveClient"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Error",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"correoCli\": \"tempor\",\n  \"grupoCli\": \"inc\",\n  \"nombreCli\": \"ut irure exercitation\",\n  \"idCli\": -15947896,\n  \"numeroCli\": \"off\",\n  \"idBen\": -1631753\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/clientess/saveClient",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"clientess",
+												"saveClient"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "beneficioss",
+					"item": [
+						{
+							"name": "get All Beneficioss",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8080/api/beneficios",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"beneficios"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/beneficioss",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"beneficioss"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"nombreBen\": \"ut laborum i\",\n    \"tipoBen\": \"in\",\n    \"idBen\": -72112082,\n    \"estadoBen\": -86215347\n  },\n  {\n    \"nombreBen\": \"non\",\n    \"tipoBen\": \"cupi\",\n    \"idBen\": 14301803,\n    \"estadoBen\": 91389066\n  }\n]"
+								},
+								{
+									"name": "Internal Server Error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/beneficioss",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"beneficioss"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/beneficioss",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"beneficioss"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "upload Sk",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"sk_formato\": [{\n\t\t\t\"beneficio\": \"Descuento1\"\n\t\t},\n\t\t{\n\t\t\t\"beneficio\": \"Descuento2\"\n\t\t},\n\t\t{\n\t\t\t\"beneficio\": \"Descuento3\"\n\t\t},\n\t\t{\n\t\t\t\"beneficio\": \"Descuento4\"\n\t\t},\n\t\t{\n\t\t\t\"beneficio\": \"Descuento5\"\n\t\t},\n\t\t{\n\t\t\t\"beneficio\": \"Descuento6\"\n\t\t},\n\t\t{\n\t\t\t\"beneficio\": \"Descuento7\"\n\t\t}\n\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/beneficios/uploadSk",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"beneficios",
+										"uploadSk"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"sk_formato\": [\n    {\n      \"beneficio\": \"adipisicing \"\n    },\n    {\n      \"beneficio\": \"et\"\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/beneficioss/uploadSk",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"beneficioss",
+												"uploadSk"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"correctProcess\": true,\n  \"message\": \"eiusmod velit\",\n  \"data\": {}\n}"
+								},
+								{
+									"name": "Internal Server Error",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"sk_formato\": [\n    {\n      \"beneficio\": \"adipisicing \"\n    },\n    {\n      \"beneficio\": \"et\"\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/beneficioss/uploadSk",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"beneficioss",
+												"uploadSk"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Error",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"sk_formato\": [\n    {\n      \"beneficio\": \"adipisicing \"\n    },\n    {\n      \"beneficio\": \"et\"\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/beneficioss/uploadSk",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"beneficioss",
+												"uploadSk"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "upload Sh",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/xml"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<th_formato>\n\t<beneficios>\n\t\t\t<beneficio>Descuento1</beneficio>\n\t\t\t<beneficio>Descuento2</beneficio>\n\t\t\t<beneficio>Descuento3</beneficio>\n\t\t\t<beneficio>Descuento4</beneficio>\t\t\t\n\t\t\t<beneficio>Descuento5</beneficio>\t\t\t\n\t\t\t<beneficio>Descuento6</beneficio>\t\t\t\n\t</beneficios>\n</th_formato>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/beneficios/uploadTh",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"beneficios",
+										"uploadTh"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"beneficios\": {\n    \"beneficio\": [\n      \"id qui nisi magna\",\n      \"ex in magna\"\n    ]\n  }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/beneficioss/uploadSh",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"beneficioss",
+												"uploadSh"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"correctProcess\": true,\n  \"message\": \"eiusmod velit\",\n  \"data\": {}\n}"
+								},
+								{
+									"name": "Internal Server Error",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"beneficios\": {\n    \"beneficio\": [\n      \"id qui nisi magna\",\n      \"ex in magna\"\n    ]\n  }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/beneficioss/uploadSh",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"beneficioss",
+												"uploadSh"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Error",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"beneficios\": {\n    \"beneficio\": [\n      \"id qui nisi magna\",\n      \"ex in magna\"\n    ]\n  }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/beneficioss/uploadSh",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"beneficioss",
+												"uploadSh"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
