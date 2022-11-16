@@ -17,6 +17,10 @@
 
     archivo: back-end-java-postman.json
 
+* SWAGGER
+
+    http://localhost:8080/swagger-ui/index.html
+
 
 
 
